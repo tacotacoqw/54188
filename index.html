@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智能少年 - Cyber Youth</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 背景动画 -->
+    <div class="cyber-bg">
+        <div class="grid-lines"></div>
+        <div class="floating-particles"></div>
+    </div>
+
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">智能少年</span>
+                <span class="logo-subtitle">CYBER YOUTH</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">首页</a></li>
+                <li><a href="#about" class="nav-link">关于</a></li>
+                <li><a href="#news" class="nav-link">最新消息</a></li>
+                <li><a href="#products" class="nav-link">产品</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 首页部分 -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="glitch" data-text="智能少年">智能少年</span>
+                <span class="subtitle">CYBER YOUTH REVOLUTION</span>
+            </h1>
+            <p class="hero-description">
+                以自学为基础，以生产为导向
+            </p>
+            <div class="hero-buttons">
+                <button class="btn-primary">开始探索</button>
+                <button class="btn-secondary">了解更多</button>
+                <button class="btn-assessment" onclick="showAssessmentPage()">🧠 智能测评</button>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hologram">
+                <div class="hologram-ring"></div>
+                <div class="hologram-core"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 介绍部分 -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-text">关于我们</span>
+                <span class="title-line"></span>
+            </h2>
+            <div class="about-grid">
+                <div class="about-card super-scholar">
+                    <div class="card-icon">🧠</div>
+                    <h3>超级学霸</h3>
+                <p>专注985/211名校冲刺，打造学术精英成长路径</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">⚡</div>
+                    <h3>商业新秀</h3>
+                <p>培养商业思维与市场洞察力，成就未来商业领袖</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">💰</div>
+                    <h3>投资大佬</h3>
+                <p>掌握投资理财智慧，培养敏锐的财富嗅觉与风险管控能力</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">🚀</div>
+                    <h3>科技新秀</h3>
+                <p>探索前沿科技领域，用创新思维构建数字化未来世界</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 最新消息部分 -->
+    <section id="news" class="news-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-text">最新消息</span>
+                <span class="title-line"></span>
+            </h2>
+            <div class="news-grid">
+                <div class="news-card featured">
+                    <div class="news-badge">置顶</div>
+                    <div class="news-date">2024-12-20</div>
+                    <div class="news-content">
+                        <h3>智能少年平台正式上线！</h3>
+                        <p>经过团队精心打造，智能少年学习平台正式与大家见面。我们致力于为每一位学子提供最优质的学习资源和个性化指导。</p>
+                        <div class="news-tags">
+                            <span class="tag">平台上线</span>
+                            <span class="tag">重要公告</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-date">2024-12-18</div>
+                    <div class="news-content">
+                        <h3>3D打印课程全新升级</h3>
+                        <p>杨晓康老师带来全新的3D打印课程体系，结合AI技术，让创意设计变得更加简单有趣。</p>
+                        <div class="news-tags">
+                            <span class="tag">课程更新</span>
+                            <span class="tag">3D打印</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-date">2024-12-15</div>
+                    <div class="news-content">
+                        <h3>批判性思维训练营开启报名</h3>
+                        <p>Susan老师将开设批判性思维专项训练营，帮助学生培养独立思考和理性分析的能力。</p>
+                        <div class="news-tags">
+                            <span class="tag">训练营</span>
+                            <span class="tag">思维训练</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-date">2024-12-12</div>
+                    <div class="news-content">
+                        <h3>团队新成员加入</h3>
+                        <p>欢迎程跃老师加入智能少年团队，将为大家带来AI动作动画创作的精彩课程。</p>
+                        <div class="news-tags">
+                            <span class="tag">团队动态</span>
+                            <span class="tag">新成员</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news-more">
+                <button class="btn-more">查看更多消息</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 产品部分 -->
+    <section id="products" class="products-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-text">核心产品</span>
+                <span class="title-line"></span>
+            </h2>
+            <div class="products-grid">
+                <div class="product-card computer-card" data-product-id="gaming-pc">
+                    <div class="product-header">
+                        <div class="product-icon animated-icon">👨‍🎓</div>
+                        <h3>智能少年</h3>
+                    </div>
+                    <div class="product-content">
+                        <p>覆盖小学至大学全学段，构建完整的智能化学习生态体系</p>
+                        <ul class="feature-list">
+                            <li>内容杠杆 - 优质教育资源整合</li>
+                            <li>内容杠杆 - 优质教育资源整合</li>
+                            <li>内容杠杆 - 优质教育资源整合</li>
+                        </ul>
+                    </div>
+                    <div class="product-footer">
+                        <button class="btn-product" style="display: block; text-align: center; text-decoration: none; line-height: 1.2;" data-product="gaming-pc" onclick="showProductDetail('gaming-pc'); return false;">了解详情</button>
+                    </div>
+                </div>
+                
+                <div class="product-card super-scholar" data-product-id="super-scholar">
+                    <div class="product-header">
+                        <div class="product-icon animated-icon">🖨️</div>
+                        <h3>3D打印</h3>
+                    </div>
+                    <div class="product-content">
+                        <p>创新3D打印技术，激发创造潜能</p>
+                        <ul class="feature-list">
+                            <li>3D建模 - 设计思维培养</li>
+                            <li>打印技术 - 实操技能训练</li>
+                            <li>创意实现 - 想象力转化</li>
+                        </ul>
+                    </div>
+                    <div class="product-footer">
+                        <button class="btn-product" style="display: block; text-align: center; text-decoration: none; line-height: 1.2;" data-product="super-scholar" onclick="showProductDetail('super-scholar'); return false;">了解详情</button>
+                    </div>
+                </div>
+                
+                <div class="product-card business-star" data-product-id="business-star">
+                    <div class="product-header">
+                        <div class="product-icon animated-icon">🧠</div>
+                        <h3>批判性思维</h3>
+                    </div>
+                    <div class="product-content">
+                        <p>培养独立思考，提升理性分析能力</p>
+                        <ul class="feature-list">
+                            <li>逻辑思维 - 理性分析培养</li>
+                            <li>独立判断 - 批判性评估</li>
+                            <li>决策能力 - 明智选择技巧</li>
+                        </ul>
+                    </div>
+                    <div class="product-footer">
+                        <button class="btn-product" style="display: block; text-align: center; text-decoration: none; line-height: 1.2;" data-product="business-star" onclick="showProductDetail('business-star'); return false;">了解详情</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 智能大脑详细页面 -->
+    <section id="product-detail-gaming-pc" class="product-detail-section" style="display: none;">
+        <div class="container">
+            <div class="detail-header">
+                <button class="back-btn back-to-main">← 返回上一页</button>
+                <h2 class="detail-title">
+                    <span class="detail-icon">👨‍🎓</span>
+                    <span class="title-text">智能少年</span>
+                </h2>
+            </div>
+            <div class="detail-content">
+                <div class="detail-grid">
+                    <div class="detail-info">
+                        <h3>智能少年</h3>
+                        <div class="tech-list">
+                            <div class="tech-item">
+                                <h4>智能杠杆</h4>
+                                <p>定义比如编程AI</p>
+                            </div>
+                            <div class="tech-item">
+                                <h4>内容杠杆</h4>
+                                <p>每个人都会有自己内容</p>
+                            </div>
+                            <div class="tech-item">
+                                <h4>资本杠杆</h4>
+                                <p>知道资本怎么做你局的</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-visual">
+                        <img src="Wentao.png" alt="Wentao" class="detail-image">
+                    </div>
+                </div>
+                <div class="performance-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">点赞率</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">99+</span>
+                        <span class="stat-label">好评率</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">学会率</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 量子网络详细页面 -->
+    <section id="product-detail-super-scholar" class="product-detail-section" style="display: none;">
+        <div class="container">
+            <div class="detail-header">
+                 <button class="back-btn back-to-main">← 返回上一页</button>
+            <h2 class="detail-title">
+                <span class="detail-icon">🖨️</span>
+                <span class="title-text">3D打印</span>
+                </h2>
+            </div>
+            <div class="detail-content">
+                <div class="detail-grid">
+                    <div class="detail-info">
+                        <h3>3D打印创新教育</h3>
+                        <div class="tech-list">
+                            <div class="tech-item">
+                                <h4>3D建模设计</h4>
+                <p>学习专业建模软件和设计思维</p>
+                            </div>
+                            <div class="tech-item">
+                                <h4>打印技术实操</h4>
+                <p>掌握3D打印设备操作和材料应用</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-visual">
+                        <img src="Xiaokang.png" alt="Xiaokang" class="detail-image">
+                    </div>
+                </div>
+                <div class="performance-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">150</span>
+                        <span class="stat-label">点赞数</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">好评率</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">78%</span>
+                        <span class="stat-label">学会率</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 能量核心详细页面 -->
+    <section id="product-detail-business-star" class="product-detail-section" style="display: none;">
+        <div class="container">
+            <div class="detail-header">
+                 <button class="back-btn back-to-main">← 返回上一页</button>
+            <h2 class="detail-title">
+                <span class="detail-icon">🧠</span>
+                <span class="title-text">批判性思维</span>
+                </h2>
+            </div>
+            <div class="detail-content">
+                <div class="detail-grid">
+                    <div class="detail-info">
+                        <h3>批判性思维培养</h3>
+                        <div class="tech-list">
+                            <div class="tech-item">
+                                <h4>逻辑分析</h4>
+                <p>培养理性思考和逻辑推理能力</p>
+                            </div>
+                            <div class="tech-item">
+                                <h4>独立判断</h4>
+                <p>提升批判性评估和决策制定技能</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-visual">
+                        <img src="Susan.png" alt="Susan" class="detail-image">
+                    </div>
+                </div>
+                <div class="performance-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">200</span>
+                        <span class="stat-label">点赞数</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">好评率</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">学会率</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 团队介绍页面 -->
+    <section id="team-section" class="team-detail-section" style="display: none;">
+        <div class="container">
+            <div class="detail-header">
+                <button class="back-btn back-to-main">← 返回上一页</button>
+                <h2 class="detail-title">
+                    <span class="detail-icon">👥</span>
+                    <span class="title-text">团队介绍</span>
+                </h2>
+            </div>
+            <div class="team-content">
+                <div class="team-intro">
+                    <h3>我们的使命</h3>
+                    <p>智能少年团队致力于推动人工智能技术的发展，创造改变世界的科技产品。我们相信技术的力量能够让世界变得更美好。</p>
+                </div>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-avatar">
+                            <img src="Wentao.png" alt="文韬老师" class="avatar-img">
+                        </div>
+                        <h4>文韬老师</h4>
+                        <p class="member-role">智能少年创始人</p>
+                        <p class="member-desc">美国ASU计算机科学硕士M.C.。</p>
+                        <div class="member-skills">
+                            <span class="skill-tag">内容杠杆</span>
+                            <span class="skill-tag">智能杠杆</span>
+                            <span class="skill-tag">资本杠杆</span>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar">
+                            <img src="Xiaokang.png" alt="杨晓康老师" class="avatar-img">
+                        </div>
+                        <h4>杨晓康老师</h4>
+                        <p class="member-role">3D打印导师</p>
+                        <p class="member-desc">广东工业大学硕士，工信部认证AI内容创作室(中级)。</p>
+                        <div class="member-skills">
+                            <span class="skill-tag">产品设计</span>
+                            <span class="skill-tag">3D打印</span>
+                            <span class="skill-tag">AI</span>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar">
+                            <img src="Susan.png" alt="Susan老师" class="avatar-img">
+                        </div>
+                        <h4>Susan老师</h4>
+                        <p class="member-role">批判性思维导师</p>
+                        <p class="member-desc">批判性思维导师厦门大学MBA，前世界500强高管。</p>
+                        <div class="member-skills">
+                            <span class="skill-tag">批判性思维</span>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar">🔬</div>
+                        <h4>熊猫老师</h4>
+                        <p class="member-role">前腾讯、百度、京东资深产品经理</p>
+                        <p class="member-desc">拥有十年互联网产品实战经验。</p>
+                        <div class="member-skills">
+                            <span class="skill-tag">AI网站</span>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar">💼</div>
+                        <h4>李明老师</h4>
+                        <p class="member-role">CEO商业教练</p>
+                        <p class="member-desc">12年IBM战略咨询，纽交所上市公司高级副总裁。</p>
+                        <div class="member-skills">
+                            <span class="skill-tag">战略咨询</span>
+                            <span class="skill-tag">商业教练</span>
+                            <span class="skill-tag">企业管理</span>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar">📚</div>
+                        <h4>杨文静老师</h4>
+                        <p class="member-role">数学教育专家</p>
+                        <p class="member-desc">中国人民大学本硕，北京创新国际学校数学老师，提倡培养学生自学能力，开展数学游戏化入门实践探索先行者。</p>
+                        <div class="member-skills">
+                            <span class="skill-tag">数学教育</span>
+                            <span class="skill-tag">自学能力培养</span>
+                            <span class="skill-tag">游戏化教学</span>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar">📈</div>
+                        <h4>涂志远老师</h4>
+                        <p class="member-role">金融分析专家</p>
+                        <p class="member-desc">哈工大本科，清华大学硕士，北京大学经济学双学位，5年金融行业从业经历，东方财富网、财联社特约评论员。</p>
+                        <div class="member-skills">
+                            <span class="skill-tag">金融分析</span>
+                            <span class="skill-tag">投资策略</span>
+                            <span class="skill-tag">市场评论</span>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar">🎬</div>
+                        <h4>程跃老师</h4>
+                        <p class="member-role">AI动作动画实战讲师</p>
+                        <p class="member-desc">Vidu官方推荐创作者、课程讲师，AI动作动画创作人。</p>
+                        <div class="member-skills">
+                            <span class="skill-tag">AI动画</span>
+                            <span class="skill-tag">动作设计</span>
+                            <span class="skill-tag">视频创作</span>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar">
+                            <img src="Xiaopeng.jpg" alt="小鹏总监" class="avatar-img">
+                        </div>
+                        <h4>小鹏总监</h4>
+                        <p class="member-role">网页开发者</p>
+                        <p class="member-desc">智能少年官方推荐总监、技术总监。</p>
+                        <div class="member-skills">
+                            <span class="skill-tag">编程</span>
+                            <span class="skill-tag">AI</span>
+                            <span class="skill-tag">网页</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-values">
+                    <h3>核心价值观</h3>
+                    <div class="values-grid">
+                        <div class="value-item">
+                            <div class="value-icon">💡</div>
+                            <h4>创新驱动</h4>
+                            <p>持续探索前沿技术，勇于突破传统思维</p>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon">🤝</div>
+                            <h4>团队协作</h4>
+                            <p>相信团队的力量，共同创造卓越成果</p>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon">🎯</div>
+                            <h4>用户至上</h4>
+                            <p>以用户需求为导向，创造真正有价值的产品</p>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon">🌟</div>
+                            <h4>追求卓越</h4>
+                            <p>永不满足现状，持续追求更高的标准</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系方式页面 -->
+    <section id="contact-section" class="contact-detail-section" style="display: none;">
+        <div class="container">
+            <div class="detail-header">
+                <button class="back-btn back-to-main">← 返回上一页</button>
+                <h2 class="detail-title">
+                    <span class="detail-icon">📞</span>
+                    <span class="title-text">联系方式</span>
+                </h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-intro">
+                    <h3>联系我们</h3>
+                <p>欢迎与智能少年团队取得联系，我们期待与您合作，共同创造美好的未来。</p>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <div class="contact-icon">🏢</div>
+                        <h4>公司地址</h4>
+                        <p>广东省深圳市南山区科技园</p>
+                        <p>卫星大厦 9楼912办公室</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <h4>邮箱地址</h4>
+                        <p>info@smartteen.com</p>
+                        <p>support@smartteen.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <h4>联系电话</h4>
+                        <p>+86 755-8888-9999</p>
+                        <p>+86 400-123-4567</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🕒</div>
+                        <h4>工作时间</h4>
+                        <p>周一至周五：9:00-18:00</p>
+                        <p>周六：10:00-16:00</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>在线留言</h3>
+                    <form class="message-form" name="contact" method="POST" data-netlify="true" action="/">
+                        <input type="hidden" name="form-name" value="contact" />
+                        <input type="hidden" name="to-email" value="peiqigogerge@gmail.com" />
+                        <div class="form-group">
+                            <label for="name">姓名</label>
+                            <input type="text" id="name" name="name" placeholder="请输入您的姓名" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">邮箱</label>
+                            <input type="email" id="email" name="email" placeholder="请输入您的邮箱" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">主题</label>
+                            <input type="text" id="subject" name="subject" placeholder="请输入留言主题" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">留言内容</label>
+                            <textarea id="message" name="message" rows="5" placeholder="请输入您的留言内容" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">发送留言</button>
+                    </form>
+                </div>
+                <div class="social-contact">
+                    <h3>社交媒体</h3>
+                    <div class="social-icons">
+                        <a href="https://weixin.qq.com/" target="_blank" class="social-icon wechat-icon">
+                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="wechatGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#00FF2A;stop-opacity:1" />
+                                        <stop offset="50%" style="stop-color:#00D924;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#00B01F;stop-opacity:1" />
+                                    </linearGradient>
+                                    <filter id="glow">
+                                        <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                                        <feMerge> 
+                                            <feMergeNode in="coloredBlur"/>
+                                            <feMergeNode in="SourceGraphic"/>
+                                        </feMerge>
+                                    </filter>
+                                </defs>
+                                <path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 4.882-1.900 7.852.24-.71-2.358-3.664-4.416-8.596-4.416zM5.785 7.75c.474 0 .857.383.857.857s-.383.857-.857.857-.857-.383-.857-.857.383-.857.857-.857zm5.812 0c.474 0 .857.383.857.857s-.383.857-.857.857-.857-.383-.857-.857.383-.857.857-.857z" fill="url(#wechatGradient)" filter="url(#glow)"/>
+                                <path d="M23.759 16.077c0-3.204-3.218-5.816-7.163-5.816-4.025 0-7.292 2.612-7.292 5.816 0 3.204 3.267 5.816 7.292 5.816a8.563 8.563 0 0 0 2.292-.312c.203-.054.408-.027.581.081l1.518.888a.264.264 0 0 0 .135.043c.13 0 .234-.104.234-.234 0-.057-.023-.113-.038-.17l-.312-1.18a.472.472 0 0 1 .17-.531c1.462-1.073 2.383-2.662 2.383-4.401zm-9.38-1.072c-.474 0-.857.383-.857.857s.383.857.857.857.857-.383.857-.857-.383-.857-.857-.857zm4.595 0c-.474 0-.857.383-.857.857s.383.857.857.857-.857-.383-.857-.857-.383-.857-.857-.857z" fill="url(#wechatGradient)" filter="url(#glow)"/>
+                            </svg>
+                        </a>
+                        <a href="https://im.qq.com/index/" target="_blank" class="social-icon qq-icon">
+                             <svg width="55" height="55" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <defs>
+                                     <filter id="qqGlow">
+                                         <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+                                         <feMerge> 
+                                             <feMergeNode in="coloredBlur"/>
+                                             <feMergeNode in="SourceGraphic"/>
+                                         </feMerge>
+                                     </filter>
+                                 </defs>
+                                 <!-- QQ企鹅主体 -->
+                                 <ellipse cx="50" cy="45" rx="30" ry="35" fill="#000000" filter="url(#qqGlow)"/>
+                                 <!-- 企鹅肚子 -->
+                                 <ellipse cx="50" cy="55" rx="22" ry="28" fill="#FFFFFF"/>
+                                 <!-- 红色围巾 -->
+                                 <ellipse cx="50" cy="35" rx="32" ry="8" fill="#FF3333"/>
+                                 <rect x="35" y="40" width="12" height="25" fill="#FF3333"/>
+                                 <!-- 左眼白色部分 -->
+                                 <ellipse cx="40" cy="25" rx="6" ry="8" fill="#FFFFFF"/>
+                                 <!-- 左眼黑色瞳孔 -->
+                                 <ellipse cx="40" cy="25" rx="3" ry="5" fill="#000000"/>
+                                 <!-- 右眼白色部分 -->
+                                 <ellipse cx="60" cy="25" rx="6" ry="8" fill="#FFFFFF"/>
+                                 <!-- 右眼眯眼效果 -->
+                                 <path d="M54 22 Q60 25 66 22 Q60 28 54 25 Z" fill="#000000"/>
+                                 <!-- 嘴巴 -->
+                                 <ellipse cx="50" cy="32" rx="8" ry="4" fill="#FFA500"/>
+                                 <!-- 左翅膀 -->
+                                 <ellipse cx="20" cy="50" rx="8" ry="20" fill="#000000" transform="rotate(-15 20 50)"/>
+                                 <!-- 右翅膀 -->
+                                 <ellipse cx="80" cy="50" rx="8" ry="20" fill="#000000" transform="rotate(15 80 50)"/>
+                                 <!-- 左脚 -->
+                                 <ellipse cx="40" cy="85" rx="8" ry="4" fill="#FFA500"/>
+                                 <!-- 右脚 -->
+                                 <ellipse cx="60" cy="85" rx="8" ry="4" fill="#FFA500"/>
+                             </svg>
+                         </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 探索页面 -->
+    <section id="explore" class="explore-section" style="display: none;">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-text">探索资源</span>
+                <span class="title-line"></span>
+            </h2>
+            <div class="explore-content">
+                <div class="resource-grid">
+                    <div class="resource-card pdf-card">
+                        <div class="resource-header">
+                            <div class="resource-icon">📄</div>
+                            <h3>项目文档</h3>
+                        </div>
+                        <div class="resource-preview">
+                            <iframe src="6.pdf" width="100%" height="400px" frameborder="0"></iframe>
+                        </div>
+                        <div class="resource-actions">
+                            <a href="6.pdf" target="_blank" class="btn-download">下载PDF</a>
+                            <a href="6.pdf" target="_blank" class="btn-view">全屏查看</a>
+                        </div>
+                    </div>
+                    
+                    <div class="resource-card video-card">
+                        <div class="resource-header">
+                            <div class="resource-icon">🎬</div>
+                            <h3>演示视频</h3>
+                        </div>
+                        <div class="resource-preview">
+                            <video controls width="100%" height="400px">
+                                <source src="bot.mp4" type="video/mp4">
+                                您的浏览器不支持视频播放。
+                            </video>
+                        </div>
+                        <div class="resource-actions">
+                            <a href="bot.mp4" download class="btn-download">下载视频</a>
+                            <button class="btn-fullscreen" onclick="toggleFullscreen(this.parentElement.previousElementSibling.querySelector('video'))">全屏播放</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="explore-navigation">
+                    <button class="btn-back" onclick="showMainPage()">返回首页</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 超级学霸页面 -->
+    <section id="super-scholar-section" class="super-scholar-detail-section" style="display: none;">
+        <div class="container">
+            <div class="detail-header">
+                <button class="back-btn back-to-main">← 返回上一页</button>
+                <h2 class="detail-title">
+                    <span class="detail-icon">🧠</span>
+                    <span class="title-text">超级学霸</span>
+                </h2>
+            </div>
+            <div class="detail-content">
+                <div class="scholar-intro">
+                    <h3>专注985/211名校冲刺</h3>
+                    <p>超级学霸项目致力于为有志于冲刺985/211名校的学生提供全方位的学术支持和成长指导。我们汇聚了来自顶尖高校的优秀导师，为每一位学员量身定制学习方案，助力实现名校梦想。</p>
+                </div>
+                
+                <div class="scholar-features">
+                    <div class="feature-grid">
+                        <div class="feature-item">
+                            <div class="feature-icon">📚</div>
+                            <h4>个性化学习方案</h4>
+                            <p>根据学员基础和目标院校，制定专属学习计划</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">👨‍🏫</div>
+                            <h4>名校导师指导</h4>
+                            <p>985/211高校毕业的优秀导师一对一指导</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🎯</div>
+                            <h4>精准备考策略</h4>
+                            <p>针对目标院校的考试特点，提供精准备考方案</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">📈</div>
+                            <h4>学习效果跟踪</h4>
+                            <p>实时监控学习进度，及时调整学习策略</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="scholar-team">
+                    <h3>导师团队</h3>
+                    <div class="team-showcase">
+                        <div class="mentor-card">
+                            <div class="mentor-avatar">
+                                <img src="Wentao.png" alt="文韬老师" class="mentor-img">
+                            </div>
+                            <div class="mentor-info">
+                                <h4>文韬老师</h4>
+                                <p class="mentor-title">智能少年创始人</p>
+                                <p class="mentor-desc">美国ASU计算机科学硕士，拥有丰富的国际教育背景。专注于培养学生的创新思维和学术能力，在AI和计算机科学领域有深厚造诣。</p>
+                                <div class="mentor-achievements">
+                                    <span class="achievement-tag">美国硕士</span>
+                                    <span class="achievement-tag">AI专家</span>
+                                    <span class="achievement-tag">创新导师</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="scholar-stats">
+                    <h3>成果展示</h3>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number">95%</div>
+                            <div class="stat-label">名校录取率</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">成功学员</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">合作院校</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">3年</div>
+                            <div class="stat-label">平均提升</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 商业新秀页面 -->
+    <section id="business-star-section" class="business-star-detail-section" style="display: none;">
+        <div class="container">
+            <div class="detail-header">
+                <button class="back-btn back-to-main" data-translate="btn-back">← 返回上一页</button>
+                <h2 class="detail-title">
+                    <span class="detail-icon">⚡</span>
+                    <span class="title-text">商业新秀</span>
+                </h2>
+            </div>
+            <div class="detail-content">
+                <div class="business-intro">
+                    <h3>培养商业思维与市场洞察力</h3>
+                    <p>商业新秀项目专注于培养具有敏锐商业嗅觉和卓越领导力的未来商业精英。通过实战案例分析、商业模拟演练和导师指导，帮助学员建立系统的商业思维框架。</p>
+                </div>
+                
+                <div class="business-features">
+                    <div class="feature-grid">
+                        <div class="feature-item">
+                            <div class="feature-icon">💡</div>
+                            <h4>商业思维训练</h4>
+                            <p>系统性商业思维培养，提升市场敏感度</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">📈</div>
+                            <h4>实战案例分析</h4>
+                            <p>真实商业案例深度剖析，理论结合实践</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🤝</div>
+                            <h4>领导力培养</h4>
+                            <p>团队管理与沟通技巧全面提升</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🎯</div>
+                            <h4>创业指导</h4>
+                            <p>从0到1的创业全流程指导</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="business-team">
+                    <h3>导师团队</h3>
+                    <div class="team-showcase">
+                        <div class="mentor-card">
+                            <div class="mentor-avatar">
+                                <img src="Wentao.png" alt="文韬老师" class="mentor-img">
+                            </div>
+                            <div class="mentor-info">
+                                <h4>文韬老师</h4>
+                                <p class="mentor-title">智能少年创始人</p>
+                                <p class="mentor-desc">美国ASU计算机科学硕士，拥有丰富的国际教育背景。专注于培养学生的创新思维和商业能力，在商业战略和企业管理领域有深厚造诣。</p>
+                                <div class="mentor-achievements">
+                                    <span class="achievement-tag">美国硕士</span>
+                                    <span class="achievement-tag">商业专家</span>
+                                    <span class="achievement-tag">创新导师</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="business-stats">
+                    <h3>成果展示</h3>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number">200+</div>
+                            <div class="stat-label">成功学员</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">创业项目</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">80%</div>
+                            <div class="stat-label">就业率</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">5亿+</div>
+                            <div class="stat-label">融资总额</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 投资大佬页面 -->
+    <section id="investment-master-section" class="investment-master-detail-section" style="display: none;">
+        <div class="container">
+            <div class="detail-header">
+                <button class="back-btn back-to-main">← 返回上一页</button>
+                <h2 class="detail-title">
+                    <span class="detail-icon">💰</span>
+                    <span class="title-text">投资大佬</span>
+                </h2>
+            </div>
+            <div class="detail-content">
+                <div class="investment-intro">
+                    <h3>掌握投资理财智慧</h3>
+                    <p>投资大佬项目致力于培养具有专业投资能力的财富管理精英。通过系统的投资理论学习、实盘操作训练和风险管理实践，帮助学员建立完整的投资体系。</p>
+                </div>
+                
+                <div class="investment-features">
+                    <div class="feature-grid">
+                        <div class="feature-item">
+                            <div class="feature-icon">📊</div>
+                            <h4>投资理论体系</h4>
+                            <p>价值投资、技术分析等多元化投资策略</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">💹</div>
+                            <h4>实盘操作训练</h4>
+                            <p>真实市场环境下的投资实战演练</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🛡️</div>
+                            <h4>风险管理</h4>
+                            <p>系统性风险识别与控制方法</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🔍</div>
+                            <h4>市场分析</h4>
+                            <p>宏观经济与行业趋势深度解析</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="investment-team">
+                    <h3>导师团队</h3>
+                    <div class="team-showcase">
+                        <div class="mentor-card">
+                            <div class="mentor-avatar">
+                                <img src="Wentao.png" alt="文韬老师" class="mentor-img">
+                            </div>
+                            <div class="mentor-info">
+                                <h4>文韬老师</h4>
+                                <p class="mentor-title">智能少年创始人</p>
+                                <p class="mentor-desc">美国ASU计算机科学硕士，拥有丰富的国际教育背景。专注于培养学生的投资理财思维和财富管理能力，在金融投资和风险控制领域有深厚造诣。</p>
+                                <div class="mentor-achievements">
+                                    <span class="achievement-tag">美国硕士</span>
+                                    <span class="achievement-tag">投资专家</span>
+                                    <span class="achievement-tag">财富导师</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="investment-stats">
+                    <h3>成果展示</h3>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number">25%</div>
+                            <div class="stat-label">年化收益率</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">300+</div>
+                            <div class="stat-label">成功学员</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">10亿+</div>
+                            <div class="stat-label">管理资产</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">90%</div>
+                            <div class="stat-label">盈利比例</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 科技新秀页面 -->
+    <section id="tech-star-section" class="tech-star-detail-section" style="display: none;">
+        <div class="container">
+            <div class="detail-header">
+                <button class="back-btn back-to-main">← 返回上一页</button>
+                <h2 class="detail-title">
+                    <span class="detail-icon">🚀</span>
+                    <span class="title-text">科技新秀</span>
+                </h2>
+            </div>
+            <div class="detail-content">
+                <div class="tech-intro">
+                    <h3>探索前沿科技领域</h3>
+                    <p>科技新秀项目专注于培养具有前沿技术视野和创新能力的科技人才。涵盖人工智能、区块链、物联网等热门技术领域，通过项目实战和技术分享，助力学员成为科技领域的佼佼者。</p>
+                </div>
+                
+                <div class="tech-features">
+                    <div class="feature-grid">
+                        <div class="feature-item">
+                            <div class="feature-icon">🤖</div>
+                            <h4>AI技术前沿</h4>
+                            <p>机器学习、深度学习等AI核心技术</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">⛓️</div>
+                            <h4>区块链应用</h4>
+                            <p>去中心化技术与智能合约开发</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🌐</div>
+                            <h4>全栈开发</h4>
+                            <p>前后端一体化开发能力培养</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🔬</div>
+                            <h4>创新实验室</h4>
+                            <p>前沿技术研究与产品孵化</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-team">
+                    <h3>导师团队</h3>
+                    <div class="team-showcase">
+                        <div class="mentor-card">
+                            <div class="mentor-avatar">
+                                <img src="Xiaokang.png" alt="杨晓康老师" class="mentor-img">
+                            </div>
+                            <div class="mentor-info">
+                                <h4>杨晓康老师</h4>
+                                <p class="mentor-title">技术架构专家</p>
+                                <p class="mentor-desc">资深软件工程师，在人工智能、机器学习和全栈开发领域有丰富经验。专注于培养学生的编程能力和技术创新思维。</p>
+                                <div class="mentor-achievements">
+                                    <span class="achievement-tag">技术专家</span>
+                                    <span class="achievement-tag">AI导师</span>
+                                    <span class="achievement-tag">全栈开发</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mentor-card">
+                            <div class="mentor-avatar">
+                                <img src="Wentao.png" alt="文韬老师" class="mentor-img">
+                            </div>
+                            <div class="mentor-info">
+                                <h4>文韬老师</h4>
+                                <p class="mentor-title">智能少年创始人</p>
+                                <p class="mentor-desc">美国ASU计算机科学硕士，拥有丰富的国际教育背景。专注于培养学生的创新思维和技术领导力，在前沿科技和产品创新领域有深厚造诣。</p>
+                                <div class="mentor-achievements">
+                                    <span class="achievement-tag">美国硕士</span>
+                                    <span class="achievement-tag">科技专家</span>
+                                    <span class="achievement-tag">创新导师</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-stats">
+                    <h3>成果展示</h3>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number">100+</div>
+                            <div class="stat-label">技术项目</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">400+</div>
+                            <div class="stat-label">成功学员</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">95%</div>
+                            <div class="stat-label">就业率</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">50万+</div>
+                            <div class="stat-label">平均薪资</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 智能测评系统 -->
+    <section id="assessment-section" class="assessment-section" style="display: none;">
+        <!-- 隐藏导航栏 -->
+        <style>
+            #assessment-section .navbar {
+                display: none !important;
+            }
+        </style>
+        
+        <div class="container">
+            <div class="detail-header">
+                <button class="back-btn back-to-main">← 返回上一页</button>
+                <h2 class="detail-title">
+                    <span class="detail-icon">🧠</span>
+                    <span class="title-text">智能测评系统</span>
+                </h2>
+                <p class="assessment-subtitle">发现您的天赋潜能，找到最适合的发展方向</p>
+            </div>
+            
+            <!-- 测评介绍 -->
+            <div id="assessment-intro" class="assessment-intro">
+                <div class="intro-content">
+                    <h3>发现孩子的天赋潜能</h3>
+                    <p>通过科学的测评体系，我们将分析孩子的兴趣偏好、学习能力、性格特征和思维模式，为您推荐最适合的发展方向。</p>
+                    <div class="assessment-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">🎯</div>
+                            <h4>精准分析</h4>
+                            <p>多维度评估孩子的能力特征</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🔬</div>
+                            <h4>科学测评</h4>
+                            <p>基于教育心理学理论设计</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">📊</div>
+                            <h4>个性化推荐</h4>
+                            <p>量身定制最佳发展路径</p>
+                        </div>
+                    </div>
+                    <button class="btn-start-assessment" onclick="startAssessment()">开始测评</button>
+                </div>
+            </div>
+            
+            <!-- 测评问卷 -->
+            <div id="assessment-quiz" class="assessment-quiz" style="display: none;">
+                <div class="quiz-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-fill"></div>
+                    </div>
+                    <span class="progress-text" id="progress-text">1/15</span>
+                </div>
+                
+                <div class="quiz-content">
+                    <div class="question-card" id="question-card">
+                        <h3 class="question-title" id="question-title">加载中...</h3>
+                        <div class="options-container" id="options-container">
+                            <!-- 选项将通过JavaScript动态生成 -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="quiz-navigation">
+                    <button class="btn-prev" id="btn-prev" onclick="previousQuestion()" disabled>上一题</button>
+                    <button class="btn-next" id="btn-next" onclick="nextQuestion()" disabled>下一题</button>
+                </div>
+            </div>
+            
+            <!-- 测评结果 -->
+            <div id="assessment-result" class="assessment-result" style="display: none;">
+                <div class="result-header">
+                    <h3>测评结果</h3>
+                    <p>基于您的回答，我们为您推荐以下发展方向：</p>
+                </div>
+                
+                <div class="result-content">
+                    <div class="primary-recommendation">
+                        <h4>最佳匹配</h4>
+                        <div class="recommendation-card primary" id="primary-recommendation">
+                            <!-- 主要推荐将通过JavaScript生成 -->
+                        </div>
+                    </div>
+                    
+                    <div class="secondary-recommendations">
+                        <h4>其他适合方向</h4>
+                        <div class="recommendations-grid" id="secondary-recommendations">
+                            <!-- 次要推荐将通过JavaScript生成 -->
+                        </div>
+                    </div>
+                    
+                    <div class="detailed-analysis">
+                        <h4>详细分析</h4>
+                        <div class="analysis-chart">
+                            <canvas id="ability-chart" width="400" height="300"></canvas>
+                        </div>
+                        <div class="analysis-text" id="analysis-text">
+                            <!-- 分析文本将通过JavaScript生成 -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="result-actions">
+                    <button class="btn-retake" onclick="retakeAssessment()">重新测评</button>
+                    <button class="btn-contact" onclick="showContactSection()">咨询专家</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">智能少年</span>
+                    <p>以自学为基础，以生产为导向</p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>核心产品</h4>
+                        <a href="#" class="footer-product-link" data-product-id="gaming-pc">智能少年</a>
+                        <a href="#" class="footer-product-link" data-product-id="super-scholar">3D打印</a>
+                        <a href="#" class="footer-product-link" data-product-id="business-star">批判性思维</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>公司</h4>
+                        <a href="#" class="footer-about-link">关于我们</a>
+                        <a href="#" class="footer-team-link">团队介绍</a>
+                        <a href="#" class="footer-contact-link">联系方式</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 智能少年科技有限公司. 保留所有权利.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
