@@ -125,8 +125,8 @@ function updateActiveSection() {
 function initParticleEffect() {
     const particleContainer = document.querySelector('.floating-particles');
     
-    // 减少粒子数量来提升性能
-    for (let i = 0; i < 10; i++) {
+    // 增加粒子数量来丰富视觉效果
+    for (let i = 0; i < 100; i++) {
         createParticle(particleContainer);
     }
 }
@@ -136,7 +136,7 @@ function createParticle(container) {
     particle.className = 'particle';
     
     // 随机位置和颜色
-    const colors = ['#00ffff', '#ff00ff', '#ffff00', '#00ff00'];
+    const colors = ['#00ffff', '#ff00ff', '#ffffff', '#00ff00'];
     const randomColor = colors[Math.floor(Math.random() * colors.length)];
     
     particle.style.cssText = `
@@ -325,8 +325,8 @@ style.textContent = `
     }
     
     .nav-link.active {
-        color: #00ffff !important;
-        text-shadow: 0 0 10px #00ffff !important;
+        color: #1E90FF !important;
+        text-shadow: none !important;
     }
     
     .nav-link.active::after {
@@ -454,7 +454,8 @@ function initScrollAnimations() {
 // 初始化滚动动画
 setTimeout(initScrollAnimations, 100);
 
-// 鼠标跟随效果
+// 鼠标跟随效果 - 已禁用以提升性能
+/*
 document.addEventListener('mousemove', function(e) {
     const cursor = document.querySelector('.cursor');
     if (!cursor) {
@@ -478,6 +479,7 @@ document.addEventListener('mousemove', function(e) {
     cursor2.style.left = e.clientX - 10 + 'px';
     cursor2.style.top = e.clientY - 10 + 'px';
 });
+*/
 
 // 键盘导航支持
 document.addEventListener('keydown', function(e) {
@@ -858,6 +860,44 @@ function showMainPage() {
     const mainSections = document.querySelectorAll('.hero-section, .about-section, .news-section, .products-section, .footer, .navbar');
     mainSections.forEach(section => {
         section.style.display = '';
+    });
+    
+    // 确保产品网格显示
+    const productsGrid = document.querySelector('.products-grid');
+    if (productsGrid) {
+        productsGrid.style.display = 'grid';
+    }
+    
+    // 彻底解决产品卡片显示问题
+    const productCards = document.querySelectorAll('.product-card');
+    productCards.forEach(card => {
+        // 完全重置样式
+        card.removeAttribute('style');
+        card.style.opacity = '1 !important';
+        card.style.visibility = 'visible !important';
+        card.style.display = 'block !important';
+        card.style.transform = 'none !important';
+        card.classList.add('animated');
+        card.classList.remove('hidden');
+    });
+    
+    // 强制重新渲染整个产品区域
+    const productsSection = document.querySelector('.products-section');
+    if (productsSection) {
+        productsSection.style.display = 'none';
+        productsSection.offsetHeight; // 强制重绘
+        productsSection.style.display = '';
+    }
+    
+    // 多次确保显示（解决顽固的隐藏问题）
+    [0, 50, 100, 200].forEach(delay => {
+        setTimeout(() => {
+            productCards.forEach(card => {
+                card.style.opacity = '1 !important';
+                card.style.visibility = 'visible !important';
+                card.style.display = 'block !important';
+            });
+        }, delay);
     });
     
     // 确保导航栏显示
